@@ -1,0 +1,8 @@
+apiVersion: core.krateo.io/v1alpha1
+kind: CompositionDefinition
+metadata:
+  name: nginx-composition
+spec:
+  chart:
+    url: oci://ghcr.io/leovice-org/nginx-52/nginx-app
+    version: "0.1.0"

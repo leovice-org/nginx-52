@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Nginx Values",
+  "type": "object",
+  "properties": {
+    "image": {
+      "type": "object",
+      "properties": {
+        "repository": {
+          "type": "string",
+          "description": "The repository of the Nginx image."
+        },
+        "tag": {
+          "type": "string",
+          "description": "The tag of the Nginx image."
+        }
+      }
+    },
+    "service": {
+      "type": "object",
+      "properties": {
+        "type": "string",
+          "description": "The type of the Kubernetes service."
+        },
+        "port": {
+          "type": "integer",
+          "description": "The port for the Kubernetes service."
+        }
+      }
+    }
+  }
+}
